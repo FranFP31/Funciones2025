@@ -33,9 +33,7 @@ public class Ejercicio6Funciones {
                     num1 = sc.nextInt();
                     System.out.print("\n Introduzca el segundo numero\n");
                     num2 = sc.nextInt();
-                    resultado = num1 + num2;
-                    System.out.println("El resultado es: " + resultado);
-                    return resultado;
+                   suma(num1, num2);
                 }
                 case 2->{
                     Scanner sc = new Scanner(System.in);
@@ -43,9 +41,8 @@ public class Ejercicio6Funciones {
                     num1 = sc.nextInt();
                     System.out.print("\n Introduzca el segundo numero\n");
                     num2 = sc.nextInt();
-                    resultado = num1 - num2;
-                    System.out.println("El resultado es: " + resultado);
-                    return resultado;
+                    resta(num1,num2);
+
                 }
                 case 3->{
                     Scanner sc = new Scanner(System.in);
@@ -53,9 +50,8 @@ public class Ejercicio6Funciones {
                     num1 = sc.nextInt();
                     System.out.print("\n Introduzca el segundo numero\n");
                     num2 = sc.nextInt();
-                    resultado = num1 * num2;
-                    System.out.println("El resultado es: " + resultado);
-                    return resultado;
+                    multiplicacion(num1,num2);
+
                 }
                 case 4->{
                     Scanner sc = new Scanner(System.in);
@@ -63,16 +59,33 @@ public class Ejercicio6Funciones {
                     num1 = sc.nextInt();
                     System.out.print("\n Introduzca el segundo numero\n");
                     num2 = sc.nextInt();
-                    resultado = num1/num2;
+                    division(num1,num2);
                     System.out.println("El resultado es: " + resultado);
-                    return resultado;
                 }
-                default -> System.err.println("ERROR, TE QUEDAS SIN TARTA ");
+                default -> System.err.println("🤖ERROR, TE QUEDAS SIN TARTA 🍰🍰");
             }
         }
-
         return resultado;
-
+    }
+    static double suma(int num1, int num2) {
+        double resultado=0;
+        resultado=num1+num2;
+        return resultado;
+    }
+    static double resta(int num1, int num2) {
+        double resultado=0;
+        resultado=num1-num2;
+        return resultado;
+    }
+    static double multiplicacion(int num1, int num2) {
+        double resultado=0;
+        resultado=num1*num2;
+        return resultado;
+    }
+    static double division(int num1, int num2) {
+        double resultado=0;
+        resultado=num1/num2;
+        return resultado;
     }
 
 }
